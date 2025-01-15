@@ -1,0 +1,15 @@
+runtime: nodejs20
+instance_class: F2
+
+env_variables:
+  HOST: "0.0.0.0"
+  NODE_ENV: "production"
+  DATABASE_NAME: "postgres"
+  DATABASE_USER: "postgres"
+  DATABASE_PASSWORD: "M1JY)1p5x9OC`]n%"
+  INSTANCE_CONNECTION_NAME: "concise-decker-447916-h8:europe-west2:strapi"
+  GCS_BUCKET_NAME: "strapi-rob-cms-gcp"
+  GCS_BASE_PATH: "cms"
+
+beta_settings:
+  cloud_sql_instances: "concise-decker-447916-h8:europe-west2:strapi"
