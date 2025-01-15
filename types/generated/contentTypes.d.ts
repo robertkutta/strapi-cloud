@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiPatientPatient extends Struct.CollectionTypeSchema {
   collectionName: 'patients';
   info: {
+    description: '';
     displayName: 'Patient';
     pluralName: 'patients';
     singularName: 'patient';
@@ -383,6 +384,7 @@ export interface ApiPatientPatient extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Email: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
